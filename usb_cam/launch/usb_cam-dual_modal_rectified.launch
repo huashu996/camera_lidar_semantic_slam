@@ -1,0 +1,46 @@
+<launch>
+<group ns="cam_rgb1">
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video2" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="cam_rgb" />
+    <param name="camera_name" value="cam_rgb" />
+    <param name="io_method" value="mmap"/>
+  </node>
+</group>
+<group ns="cam_rgb2">
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video4" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="cam_rgb" />
+    <param name="camera_name" value="cam_rgb" />
+    <param name="io_method" value="mmap"/>
+  </node>
+</group>
+<group ns="cam_rgb3">
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video6" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="cam_rgb" />
+    <param name="camera_name" value="cam_rgb" />
+    <param name="io_method" value="mmap"/>
+  </node>
+</group>
+<group ns="cam_rgb4">
+  <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video8" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="mjpeg" />
+    <param name="camera_frame_id" value="cam_rgb" />
+    <param name="camera_name" value="cam_rgb" />
+    <param name="io_method" value="mmap"/>
+  </node>
+</group>
+</launch>
