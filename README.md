@@ -2,7 +2,7 @@
 We propose a semantic segmentation odometry and mapping method based on LIDAR and camera data vision fusion for real-time motion states estimation and high-level
 understanding of the surrounding environment.
 # 编译
-git clone git@github.com:huashu996/camera_lidar_semantic_slam.git
+git clone git@github.com:huashu996/camera_lidar_semantic_slam.git   
 catkin_make 
 # RUN
 ## 跑自己数据集
