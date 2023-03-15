@@ -1,0 +1,5 @@
+<!-- -->
+<launch>
+  <node pkg="kittivelo_cam" type="kittivelo_cam" name="kittivelo_cam" output="screen">
+  </node>
+</launch>
