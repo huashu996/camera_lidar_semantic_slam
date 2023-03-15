@@ -1,0 +1,13 @@
+ground  R128 G64 B128
+road  R244 G35 B232
+car R0 G0 B142
+people  R255 G0 B0
+bike   R199 G11 B32
+build   R70 G70 B70
+tree    R107 G142 B35
+small tree  R152 G251 B152
+sign    R220 G220 B0
+190 153 153
+102 102 156
+153 153 153
+220 20 60

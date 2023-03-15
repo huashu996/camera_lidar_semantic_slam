@@ -1,0 +1,8 @@
+
+rosbag record -o out /velodyne_points /cam_rgb4/usb_cam/image_raw /cam_rgb1/usb_cam/image_raw /cam_rgb2/usb_cam/image_raw /cam_rgb3/usb_cam/image_raw
+ roslaunch usb_cam-dual_modal_rectified.launch
+ 
+ roslaunch velodyne_pointcloud VLP16_points.launch
+     <param name="camera_topic2" type="str" value="/left"/>
+    <param name="camera_topic3" type="str" value="/back"/>
+    <param name="camera_topic4" type="str" value="/right"/>

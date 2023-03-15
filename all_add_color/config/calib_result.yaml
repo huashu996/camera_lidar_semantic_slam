@@ -1,0 +1,84 @@
+%YAML:1.0
+---
+CameraMat1: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 391.1769628660496, 0, 315.4258113689058, 0, 394.7880088913394, 266.6286636536627, 0, 0, 1]
+DistCoeff1: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -0.312987, 0.065093,
+       -0.000877, 0.001404, 0. ]
+ImageSize: [ 1280, 720 ]
+CameraExtrinsicMat1: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [0, -1, 0.0, 0.0,
+         -0.0, 0.0,-1, 0.0, 
+          1, 0, -0, 0.0, 
+            0, 0, 0, 1]
+RotationAngleX: 0
+RotationAngleY: 0
+RotationAngleZ: 0
+CameraMat2: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 407.2963621142064, 0, 303.1031097115493, 0, 411.13207622267, 257.4468427813192, 0, 0, 1 ]
+DistCoeff2: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -0.312987, 0.065093,
+       -0.000877, 0.001404, 0. ]
+CameraExtrinsicMat2: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [-1,0, 0, 0.0,
+         0.0, 0,-1, 0.0, 
+          0, -1, 0, 0.0, 
+            0, 0, 0, 1]
+            
+CameraMat3: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 406.0039791323973, 0, 307.317582902156, 0, 406.8737979919102, 260.792382594044, 0, 0, 1 ]
+DistCoeff3: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -0.312987, 0.065093,
+       -0.000877, 0.001404, 0. ]
+CameraExtrinsicMat3: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [0, 1, 0.0, 0.0,
+         0.0, 0.0,-1, 0.0, 
+          -1, 0, 0, 0.0, 
+            0, 0, 0, 1]
+            
+CameraMat4: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [406.541118825809, 0, 297.5936762928922, 0, 410.1701972457626, 245.2447134579461, 0, 0, 1]
+DistCoeff4: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -0.312987, 0.065093,
+       -0.000877, 0.001404, 0. ]
+CameraExtrinsicMat4: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [1, 0, 0.0, 0.0,
+         0.0, 0.0,-1, 0.0, 
+          0, 1, 0, 0.0, 
+            0, 0, 0, 1]

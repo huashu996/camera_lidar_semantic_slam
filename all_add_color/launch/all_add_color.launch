@@ -1,0 +1,23 @@
+<launch>
+  <!-- <include file="$(find pointgrey_camera_driver)/launch/camera_161.launch" /> -->
+  
+  <arg name="color_distance" default="1.2" />
+  <arg name="show_colored_cloud" default="true" />
+  <arg name="save_data" default="false" />
+  
+  <node pkg="all_add_color" type="all_add_color" name="all_add_color" output="screen">
+    <param name="camera_topic1" type="str" value="/forward"/>
+    <param name="camera_topic2" type="str" value="/right"/>
+    <param name="camera_topic3" type="str" value="/back"/>
+    <param name="camera_topic4" type="str" value="/left"/>
+    <param name="lidar_topic" type="str" value="/velodyne_points" />
+    <param name="calib_file_path" type="str" value="$(find all_add_color)/config" />
+    <param name="file_name" type="str" value="calib_result.yaml" />
+    <param name="color_distance" type="double" value="$(arg color_distance)" />
+    <param name="show_colored_cloud" type="bool" value="$(arg show_colored_cloud)" />
+    <param name="save_data" type="bool" value="$(arg save_data)" />
+  </node>
+
+  <node pkg="rviz" name="rviz" type="rviz"  args="-d $(find all_add_color)/rviz/colored_pointcloud161.rviz">
+  </node>
+</launch>
